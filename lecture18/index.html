@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .box{
+            border: 2px solid red;
+            width: 25%;
+        }
+        .parent{
+            border: 2px solid black;
+            width: 30%;
+        }
+        .child{
+            border: 2px solid green;
+            width: 30%;
+
+        }
+        .grandson{
+            border:2px solid pink;
+            width : 70%;
+        }
+      
+        .box1{
+            border:2px solid black;
+            font-size: 10px;
+        }
+        .box2{
+            
+            font-size:10em;
+        }
+        .container{
+            font-size: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        welcome to My page 
+    </div>
+    <div class="parent">
+        the parents are the only one who support us in our life
+        <div class="child">
+            the child is the one who is support there parents in their old age;
+            <div class="grandson">the grandson is the most loved person for the grandparents
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="box1">Akhilesh Chaudhary
+        <div class="box2"> em is the relative unit . it decide its according to its parent element </div>
+    </div>
+    <div class="container">
+        what is the rem?
+        rem is the relative unit of measurement in CSS. It stands for "root em" and is based on the font size of the root element (usually the <html> element). 1 rem is equal to the font size of the root element, which is typically 16 pixels by default in most browsers.
+
+    </div>
+</body>
+</html>
