@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height:400px;
+            width:400px;
+            border:2px solid red;
+            background-color: beige;
+        }
+        /* @media(min-width:400px){
+            .box{
+                background-color:green;
+            }
+        } */
+        /* @media(max-width:400px){
+            .box{
+                background-color:green;
+            }
+        } */
+        @media (min-width:400px) and (max-width:800px){
+            .box{
+                background-color:green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">hello sir</div>
+</body>
+</html>
