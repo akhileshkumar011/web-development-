@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container{
+        display: flex;
+        width:500px;
+        height:500px;
+        border: 2px solid red;
+        flex-wrap: scroll;
+       }
+         .box{
+          width:50px;
+          height:50px;
+          border: 2px solid black;
+          margin:2px;
+          padding:2px;
+          background-color: burlywood;
+         }
+         p{
+            width:100px;
+            border: 2px solid black;
+            padding:2px;
+            margin:2px;
+            background-color: rgb(32, 234, 201);
+         }
+        @media (max-width:600px){
+            .container{
+                flex-direction:column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <p>Lorem ipsum dolor sit amet ?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero molestias qui consequatur nostrum consequuntur. 
+        </p>
+    </div>
+    
+
+</body>
+</html>
