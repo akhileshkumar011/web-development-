@@ -26,17 +26,25 @@
              background-color:rgb(255, 187, 0);
              border : 3px solid black;
              border-radius:10px;
-              margin:5px; 
+             margin:5px; 
              position: relative;
-             animation-name:rightMovement;
-             animation-duration:5s;
-             animation-iteration-count: 2;
-             animation-delay: 1s;
+             /* animation-name:rightMovement;
+             animation-duration:2s;
+             animation-iteration-count: 2; */
+             /* animation-delay: 1s; */
              /* animation-timing-function:linear ; */
-             animation-timing-function:ease-in ;
-             animation-timing-function:ease-out ;
-             animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1) ;
+             /* animation-timing-function:ease-in ;
+             animation-timing-function:ease-out ; */
+             /* animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1) ; */
+             /* animation-direction:alternate-reverse; */
+             /* animation-fill-mode:backwards; */
+             /* animation-fill-mode:forwards; */
+             /* animation-fill-mode:none; */
+            animation:5s ease-in 1s infinite alternate none running rightMovement;
+           
+
         }
+
         @keyframes rightMovement{
             from{
                 top:0;
@@ -44,16 +52,80 @@
             }
             to{
                 top:0;
-                left:1200px;
-            }
+                left:1350px;
+            } 
         }
+
+        .box1{
+            width: 350px;
+            height: 80px;
+            background-color:rgb(255, 187, 0);
+            border: 3px solid black;
+            border-radius:10px;
+            margin :5px;
+            position:relative;
+            animation: 5s ease-in 1s infinite alternate none running leftMovement;     
+        }
+
+        @keyframes leftMovement{
+            from{
+                top:980px;
+                left:1350px;
+            }
+            to{
+                top:980px;
+                left:0;
+            } 
+        }
+        
+        .box2{
+            width:80px;
+            height: 80px;
+            background-color:rgb(255, 187, 0);
+            border: 3px solid black;
+            border-radius:50px;
+            margin :5px;
+            position:relative;
+            top:30%;
+            left:40%;
+            animation: 5s ease-in 1s infinite alternate none running circleMovement;     
+        }
+        @keyframes circleMovement{
+            0%{
+                top:1%;
+                left:5%;
+            }
+            30%{
+                top:5%;
+                left:90%;
+            }
+            60%{
+                top:80%;
+                left:90%;
+            }
+            80%{
+                top:80%;
+                left:5%;        
+            }
+            100%{
+                top:1%;
+                left:5%;
+            }
+
+    }
+
+
     </style>
 </head>
 <body>
     <div class="container">
         <div class="box">
-
         </div>
+        <div class="box2">
+        </div>
+        <div class="box1">
+        </div>
+        
     </div>
 </body>
 </html>
