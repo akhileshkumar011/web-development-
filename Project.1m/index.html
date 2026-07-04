@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Dev<span>Portfolio</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="home" class="hero">
+        <h1>Hi, I'm a Web Developer</h1>
+        <p>Building beautiful, functional, and modern websites.</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </div>
+
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-grid">
+            
+            <div class="project-card">
+                <div class="project-img" style="background: #e2e8f0;">E-Commerce App</div>
+                <div class="project-info">
+                    <h3>Project One</h3>
+                    <p>A fully responsive online store with dynamic shopping cart features built using clean layouts.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img" style="background: #cbd5e1;">Social Dashboard</div>
+                <div class="project-info">
+                    <h3>Project Two</h3>
+                    <p>An analytics dashboard layout featuring beautiful custom CSS grid layouts and light/dark themes.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img" style="background: #94a3b8;">Weather Application</div>
+                <div class="project-info">
+                    <h3>Project Three</h3>
+                    <p>A sleek UI design for a weather application that adapts background colors dynamically.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Message sent! (Demo only)');">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" required placeholder="Your Message..."></textarea>
+                </div>
+                <button type="submit" class="btn submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 DevPortfolio. Built with HTML & CSS.</p>
+    </footer>
+
+</body>
+</html>
