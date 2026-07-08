@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+        .container{
+            width:100%;
+            height:100vh;
+            background-color:rgba(113, 210, 177, 0.351);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .card{
+            width:350px;
+            height:520px;
+            background-color:white;
+            border-radius:10px;
+            box-shadow: 2px 2px 20px 2px black;
+        }
+        .card img{
+            height:150px;
+            width:350px;
+            border-top-left-radius: 10px;
+            border-top-right-radius:10px;
+        }
+        .card h2{
+            text-align:center;
+            margin-top:10px;
+            margin-bottom:2px;
+
+        }
+        .card p{
+            text-align:center;
+            margin:10px;
+        }
+        .box{
+            width:325px;
+            height:70px;
+            background-color:rgba(123, 189, 243, 0.262);
+            border-radius:10px;
+            margin:10px;
+            display:flex;
+            margin-top:20px;
+            margin-bottom:15px;
+
+            
+        }
+        .box img{
+            height:60px;
+            width:70px;
+            margin:5px;
+            border-radius:10px;
+            
+        }
+        .box p{
+            width:80px;
+            margin:10px;
+        }
+        .box a{
+            margin-left:60px;
+            margin-top:27px;
+        }
+        .button{
+            display:flex;
+            justify-content:center;
+            margin-top:40px;
+            background-color:rgb(14, 14, 105);
+            height:65px;
+            width:325px;
+            margin:10px;
+            border-radius:10px;
+            box-shadow:0px 2px 10px 1px black;
+        }
+        .button p{
+          color:aliceblue;
+          font-size:1.1rem;
+          text-align:center;
+          height:40px;  
+          margin-top:22px;
+          margin-bottom:20px;
+          
+        }
+        .cancel{
+            margin-top:40px;
+            gap:30px;
+            height:60px;
+            font-style: bold;
+            font-size:large;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="tech.jpg" alt="">
+
+            <h2>
+                Order Summary
+            </h2>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nulla numquam iure mollitia dolor ullam.
+            </p>
+
+            <div class="box">
+                
+                <img src="music.jpg" alt="">
+
+                 <p>Annual Plan
+                    $99.9/year</p>
+                    
+                 <a href="#">Change</a>
+
+                 
+            </div>
+            <div class="button">
+                <p>Proceed For Payment</p>
+            </div>
+            <div class="cancel">
+                <p>Cancle Order</p>
+            </div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>
