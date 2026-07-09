@@ -1,0 +1,15 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+body{
+    width:100%;
+    height:100%;
+}
+.container{
+    max-width:95vw;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    background-color:rgb(125, 143, 143);
+}
