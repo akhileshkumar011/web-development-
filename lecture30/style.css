@@ -33,10 +33,11 @@ body{
 .main_container{
     display:grid;
     gap:1.5rem;
-    grid-template-columns:repeat(1, 1fr);
-   
+    /* grid-template-columns:repeat(1, 1fr); */
+    grid-template-columns:repeat(auto-fit,minmax(245px,250px));
+   justify-content:center;
 }
-@media (min-width:650px){
+/* @media (min-width:650px){
     .main_container{
         grid-template-columns:repeat(2, 1fr);
     }
@@ -53,7 +54,7 @@ body{
     }
 
     
-}
+} */
 .card_container{
     display:flex;
     flex-direction:column;
