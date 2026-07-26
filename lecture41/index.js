@@ -55,3 +55,52 @@ let apple = !(false );
 console.log(apple);
 
 
+//logical operator
+
+console.log(false || 'ram');
+console.log(false || "hello duniya ");
+console.log(false || 7 || 8 || 9 );
+
+// bitwise operator
+
+console.log(5&2);
+console.log(5|2);
+console.log(~5);
+console.log(2^6);
+console.log(10>>1);
+console.log(10<<1);
+
+
+//conditionals 
+
+let agi = 50 ;
+if(agi >= 18){
+    console.log('can vote');
+}
+else{
+    console.log('can not able to vote');
+}
+
+
+let num = 15 ;
+if (num==2){
+    console.log('a');
+}
+else if(num==3){
+    console.log('b');
+}
+else if(num==15){
+    console.log('c');
+}
+
+let mango = 5;
+switch(mango){
+    case 1 : console.log('a');
+    break;
+    case 2 : console.log('b');
+    break;
+    case 3 : console.log('c');
+    break;
+    case 5 : console.log('d');
+    break;
+}
