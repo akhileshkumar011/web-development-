@@ -100,7 +100,7 @@
 // arr.sort();
 // console.log(arr);
 
-//index of element
+//index of elemen
 // console.log(arr.indexOf(8));
 
 
